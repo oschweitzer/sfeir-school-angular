@@ -29,7 +29,34 @@ export class AppModule { }
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide with-code" -->
-# La Syntax dans le template
+# Syntaxe Global dans les formulaires Reactive forms
+
+```html
+<form [formGroup]="editForm">
+   <input type="text" formControlName="firstname">
+   <div [hidden]="!editForm.controls.firstname.valid">Firstname est d'un format invalid</div> 
+   <button type="submit" [disabled]="!editForm.valid">Modifier</button>
+</form>
+```
+<!-- .element: class="big-code" -->
+<br>
+```typescript
+import { Validators, FormControl, FormGroup } from '@angular/forms';
+@Component({...})
+export class FormComponent {
+  editForm: FormGroup;
+   constructor() {
+    this.editForm = new FormGroup({
+        firstname: new FormControl('', [Validators.required, Validators.minLength(2)])
+    })
+   }
+}
+```
+<!-- .element: class="big-code" -->
+##==##
+
+<!-- .slide: class="sfeir-basic-slide with-code" -->
+# La Syntaxe dans le template
 <br>
 <ul>
     <li>Référence au modèle de formulaire via <strong>formGroup</strong></li>
@@ -78,9 +105,7 @@ Notes
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide with-code" -->
-
-# La syntax dans la classe
-
+# La syntaxe dans la classe
 <br><br>
 
 ```typescript
