@@ -10,9 +10,6 @@ Tour de table ...
 
 # Repositories
 <p class="full-center">
-    Slides de la formation<br>
-    https://sfeir-open-source.github.io/sfeir-school-angular/<br><br>
-
     Sources des exercices<br>
     https://github.com/sfeir-open-source/sfeir-school-angular
 </p>
