@@ -15,9 +15,18 @@ Soit une application web classique avec trois composants A, B, C et une variable
 
 __Problème__: schématisation d’accès et de modification à la donnée semblable à une toile d'araigné dont chaque cas est dépendant du contexte! <br><br>
 __Répercussion__: Complication à suivre de la logique, difficile à débugger<br><br>
-<span class="center bold important">Trouver un moyen de communication communt</span>
+<span class="center bold important">Trouver un moyen de communication commun</span>
 
 ##==##
+
+# Cas concret
+<br><br>
+<div class="flex-row">
+<img alt="h-500" src="assets/images/school/state-management/problem-state-management.png" />
+</div>
+
+##==##
+
 
 <!-- .slide: class="sfeir-basic-slide" -->
 # 3 façon de communiquer
