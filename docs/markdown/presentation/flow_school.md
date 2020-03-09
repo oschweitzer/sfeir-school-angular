@@ -29,6 +29,7 @@ Tour de table ...
 ```bash
 npm install -g @angular/cli
 git clone https://github.com/sfeir-open-source/sfeir-school-angular
+git checkout chore/paris-10mars
 cd TP && npm i || npm ci
 ```
 <br>
