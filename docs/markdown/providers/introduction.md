@@ -1,12 +1,13 @@
 <!-- .slide: class="with-code inconsolata" -->
 
 # Qu'est ce qu'un Service
-- Une classe exportée
-- une annotation <b>@Injectable</b>
+
+-   An exported class
+-   an <b> @Injectable </b> annotation
 
 ```typescript
 @Injectable({
-    providedIn: AppModule
+    providedIn: AppModule,
 })
 export class TodoService {
     constructor() {
@@ -23,14 +24,14 @@ export class TodoService {
 
 Notes:
 
--   Ici on enregistre directement dans notre module AppModule (penser à l'import sinon il y aura une erreur)
--   Angular 9 propose le providedIn: any qui enregistre un service par module lazy loader (attention dans ce cas plusieurs instances)
+-   Here we record directly in our AppModule module (think about the import otherwise there will be an error)
+-   Angular 9 offers the providedIn: any which registers a service by lazy loader module (be careful in this case several instances)
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
 
-# Utiliser son service (en global)
+# Use your service (overall)
 
 ##--##
 ![h-600](assets/images/school/providers/service.png)
@@ -42,7 +43,7 @@ Notes:
 
 <!-- .slide: class="two-column-layout" -->
 
-# Utiliser son service en local
+# Use your service locally
 
 ##--##
 

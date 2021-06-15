@@ -1,38 +1,44 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
-# Créer ses propres pipes
 
-##==##
-<!-- .slide -->
-# Les différents types de pipe<br>
-
-- Pure: le pipe est appelé uniquement si la valeur sur laquelle il agit a changé (mode par défaut)<br><br>
-- Impure: le pipe est appelé à chaque changement de détection que la valeur sur laquelle il agit a changé ou non
+# Create your own pipes
 
 ##==##
 
 <!-- .slide -->
-# Comment se compose un pipe
 
-- De l'annotation <b>@Pipe</b> qui prend comme propriété name qui sera appelé dans le template <br><br>
-- D'une classe qui est déclenchée par l'annotation <b>@Pipe</b> <br><br>
-- Cette classe implémente la méthode <b>transform</b> qui prend en paramètre une valeur et éventuellement un tableau d'arguments <br><br>
-- Cette méthode <b>tranform</b> effectue des transformations (ou pas) mais retourne toujours une nouvelle valeur<br><br>
-- Penser à enregistrer votre Pipe dans le tableau déclaration de votre module (comme un composant)
+# The different types of pipe <br>
+
+-   Pure: the pipe is called only if the value on which it acts has changed (default mode) <br> <br>
+-   Impure: the pipe is called at each change of detection whether the value on which it acts has changed or not
 
 ##==##
+
+<!-- .slide -->
+
+# How is a pipe made
+
+-   <b> @Pipe </b> annotation which takes name property which will be called in the template <br> <br>
+-   Of a class that is triggered by the <b> @Pipe </b> annotation <br> <br>
+-   This class implements the <b> transform </b> method which takes a value and possibly an array of arguments as parameter <br> <br>
+-   This <b> tranform </b> method performs transformations (or not) but always returns a new value <br> <br>
+-   Remember to register your Pipe in the declaration table of your module (as a component)
+
+##==##
+
 <!-- .slide: class="with-code inconsolata" -->
-# Matérialisons cela par du code
+
+# Let's materialize this by code
 
 ```typescript
-import {Pipe} from '@angular/core';
+import { Pipe } from '@angular/core';
 @Pipe({
-   name: 'mypipe'
+    name: 'mypipe',
 })
 export class MyPipe implements PipeTransform {
-  transform(value: number, args: any[]) {
-    return newValue;
-  }
+    transform(value: number, args: any[]) {
+        return newValue;
+    }
 }
 ```
-<!-- .element: class="big-code" -->
 
+<!-- .element: class="big-code" -->

@@ -1,23 +1,24 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
 
-# Créer vos propres directives
+# Create your own directives
 
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
 
-# Quelques rappels sur les directives
+# A few reminders on the directives
 
 ![h-300 center](assets/images/school/directive/directive_schema.png) <br>
 
--   les directives structurelles : modifie le DOM<br>
--   les directives attributales : modifie l'apparence ou le comportement d'un élement<br>
--   composant : directive avec une vue<br>
+-   structural directives: modifies the DOM <br>
+-   attribute directives: modify the appearance or behavior of an element <br>
+-   component: directive with a view <br>
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Définition d'une directive
+
+# Definition of a directive
 
 ```typescript
 import { Directive } from '@angular/core';
@@ -32,19 +33,19 @@ export class MyDirective {}
 
 <!-- .slide -->
 
-# Comment invoquer une directive ?
+# How to invoke a directive?
 
--   <b>element-name</b> : pour restreindre à un élement<br><br>
--   <b>[attribute]</b> : pour restreindre à un attribut<br><br>
--   <b>.class</b> : pour restreindre à une classe<br><br>
--   <b>[attribute=value]</b> : pour restreindre à un attribut avec une certaine valeur<br><br>
--   <b>:not(sub_selector)</b> : si l'élement ne match pas le sous sélécteur
+-   <b> element-name </b>: to restrict to an element <br> <br>
+-   <b> [attribute] </b>: to restrict to one attribute <br> <br>
+-   <b> .class </b>: to restrict to a class <br> <br>
+-   <b> [attribute = value] </b>: to restrict to an attribute with a certain value <br> <br>
+-   <b>: not (sub_selector) </b>: if the element does not match the sub-selector
 
 ##==##
 
 <!-- .slide -->
 
-# Quelques exemples seront plus parlants
+# Some examples will be more meaningful
 
 ![h-400](assets/images/school/directive/attribut_directive.png)
 ![h-400](assets/images/school/directive/element_attibute_directive.png)
@@ -54,16 +55,16 @@ export class MyDirective {}
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Comment passer des props à ma directive
+# How to pass props to my directive
 
--   Lister des inputs grâce à l'annotation <b>@Input()</b>
--   Ces inputs peuvent être aliasé
--   <b>Exactement comme pour les composants</b> <br><br>
+-   List inputs using the <b> @Input() </b> annotation
+-   These inputs can be aliased
+-   <b> Exactly as for components </b> <br> <br>
 
 ```typescript
 import { Directive, Input } from '@angular/core';
 @Directive({
-    selector: '[foobar]'
+    selector: '[foobar]',
 })
 export class MyDirective {
     constuctor() {}
@@ -78,15 +79,15 @@ export class MyDirective {
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Comment intéragir avec les éléments du DOM
+# How to interact with DOM elements
 
--   ElementRef (injectable) permet de récupérer directement l'élément sur lequel agit la directive
--   Renderer2 (injectable) permet d'intéragir avec le DOM<br><br>
+-   ElementRef (injectable) allows you to directly retrieve the element on which the directive acts
+-   Renderer2 (injectable) allows to interact with the DOM <br> <br>
 
 ```typescript
 import { Directive, ElementRef, Renderer2 } from '@angular/core';
 @Directive({
-    selector: '[foobar]'
+    selector: '[foobar]',
 })
 export class MyDirective {
     constructor(private readonly element: ElementRef, private readonly renderer: Renderer2) {}
@@ -99,17 +100,17 @@ export class MyDirective {
 
 <!-- .slide -->
 
-# L'intéraction avec le DOM
+# Interaction with the DOM
 
--   Préférez l'utilisation du Renderer au lieu de ElementRef<br><br>
--   Aucune dépendance direct avec le DOM<br><br>
--   Permet d'éxécuter l'application dans d'autre environnements (EDGE, Firefox)
+-   Prefer the use of Renderer instead of ElementRef <br> <br>
+-   No direct dependency on the DOM <br> <br>
+-   Allows you to run the application in other environments (EDGE, Firefox)
 
 ##==##
 
 <!-- .slide: class="sfeir-basic-slide" -->
 
-# L'interaction avec le DOM: Practices
+# Interaction with the DOM: Practices
 
 <div class="container-practice border-red">
     <div class="icon-satisfaction">X</div>
@@ -130,11 +131,11 @@ export class MyDirective {
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Les évènements
+# The events
 
--   <b>@Hostlistener()</b> pour écouter des évènements sur l'élément host
--   <b>@Output()</b> pour propager des évènements
--   <b>Exactement comme pour les composants</b>
+-   <b> @Hostlistener() </b> to listen to events on the host element
+-   <b> @Output() </b> to propagate events
+-   <b> Exactly as for components </b>
 
 ```typescript
 @Directive({})

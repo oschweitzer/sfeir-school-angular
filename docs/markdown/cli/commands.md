@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code inconsolata" -->
 
-# Commande: Créer un projet
+# Command: Create a project
 
 ```sh
 ng new my-awesome-app
@@ -10,18 +10,18 @@ ng new my-awesome-app
 
 <br><br>
 
--   Initialise un projet entier, prêt à être mis en production <br><br>
--   Initialise un répo GIT, avec un premier commit (option que l'on peut désactiver)<br><br>
--   Installe les dépendances (on peut choisir entre npm et yarn comme package manager)<br><br>
+-   Initializes an entire project, ready to go into production <br> <br>
+-   Initialize a GIT repo, with a first commit (option that can be disabled) <br> <br>
+-   Install dependencies (you can choose between npm and yarn as package manager) <br> <br>
 
 Notes:
--   Cette commande possède beaucoup plus d'options comme le choix de l'extension style (scc, css, sass, ...). On peut également choisir si l'on souhaite ou non installer un routing
 
-##==##
+-   This command has many more options such as the choice of the style extension (scc, css, sass, ...). You can also choose whether or not you want to install a routing
+    ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Commande: Créer un composant
+# Command: Create component
 
 ```sh
 ng generate component user
@@ -30,23 +30,24 @@ ng generate component user
 <!-- .element: class="big-code" -->
 <br>
 
--   Cette commande génère les fichiers suivants:<br><br>
-    - src/app/user/user.component.ts<br><br>
-    - src/app/user/user.component.html<br><br>
-    - src/app/user/user.component.css<br><br>
-    - src/app/user/user.component.spec.ts<br><br>
+-   This command generates the following files:<br><br>
+    -   src/app/user/user.component.ts<br><br>
+    -   src/app/user/user.component.html<br><br>
+    -   src/app/user/user.component.css<br><br>
+    -   src/app/user/user.component.spec.ts<br><br>
 
 Notes:
--   l'extension du style dépend du choix que vous avez fait lors de l'initialisation de votre projet
--   On peut skipper la création du fichier test si à l'initialisation de votre projet l'option skip test a été désactivée
--   il existe une commande plus rapide avec des alias: ng g component user
--   Attention si l'option module n'est pas précisé, le composant sera importé dans le root module
+
+-   the extension of the style depends on the choice you made when initializing your project
+-   You can skip the creation of the test file if when you initialize your project the skip test option has been disabled
+-   there is a faster command with aliases: ng g component user
+-   Be careful if the module option is not specified, the component will be imported into the root module
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Commande: Créer un service
+# Command: Create a service
 
 ```sh
 ng generate service user
@@ -56,17 +57,19 @@ ng generate service user
 
 <br>
 
--   Cette commande génère les fichiers suivants:<br><br>
-    - src/app/user.service.ts<br><br>
-    - src/app/user.service.spec.ts<br><br>
+-   This command generates the following files:<br><br>
+-   src/app/user.service.ts<br><br>
+-   src/app/user.service.spec.ts<br><br>
 
 Notes:
--   Imaginons que l'on tape la commande ng generate service shared/user, le cli créera les mêmes fichiers que précédemment mais dans le dossier shared
--   Il existe un raccourci de cette commande n g service user
+
+-   Let's imagine that we type the command ng generate service shared / user, the cli will create the same files as before but in the shared folder
+-   There is a shortcut for this command n g service user
 
 ##==##
 
 <!-- .slide: class="full-center"  -->
-# Et sinon on peut générer quoi d'autre ? 
+
+# What else can we generate?
 
 ![h-800](assets/images/school/cli/generate_helper.png)

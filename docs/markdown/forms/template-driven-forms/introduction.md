@@ -6,9 +6,9 @@
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# La Fondation du Template driven Form
+# The Template driven Form Foundation
 
-Pour réaliser des formulaires avec le template driven forms, il est nécessaire d'importer le module <b>FormsModule</b> provenant du package <b>@angular/forms</b><br><br>
+To create forms with the template driven forms, it is necessary to import the <b> FormsModule </b> module from the <b> @angular/forms </b> package <br> <br>
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
     imports: [BrowserModule, FormsModule],
     declarations: [],
     providers: [],
-    bootstrap: []
+    bootstrap: [],
 })
 export class AppModule {}
 ```
@@ -29,10 +29,10 @@ export class AppModule {}
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# La syntaxe dans le template driven forms
+# The syntax in the template driven forms
 
--   <b>#authentificationForm="ngForm"</b>: On déclare une référence sur un formulaire prenant comme valeur la directive ngForm<br><br>
--   <b>authentification.value</b> permet de récupérer en format JSON objet, toutes les valeurs des champs du formulaire <br><br>
+-   <b> #authenticationForm = "ngForm" </b>: We declare a reference on a form taking as value the ngForm directive <br> <br>
+-   <b> authentication.value </b> allows you to retrieve in JSON object format all the values ​​of the form fields <br> <br>
 
 ```html
 <form #f="ngForm" (ngSubmit)="onSubmit(f.value)"></form>
@@ -44,29 +44,31 @@ export class AppModule {}
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Le binding dans le template driven form
+# The binding in the template driven form
 
-- Deux composantes obligatoires:
-  - **ngModel**: le binding d'un contrôle
-  - **name**: associer un nom au contrôle du champ
+-   Two compulsory components:
+    -   **ngModel**: the binding of a control
+    -   **name**: associate a name to the control of the field
 
 <br><br>
 
-- **Exemple 1**: binding View -> Model
+-   **Exemple 1**: binding View -> Model
 
 ```html
 <input type="text" name="title" ngModel />
 ```
 
 <!-- .element: class="big-code" -->
-- **Exemple 2**: binding Model -> View
+
+-   **Exemple 2**: binding Model -> View
 
 ```html
 <input type="text" name="title" [ngModel]="person.name" />
 ```
 
 <!-- .element: class="big-code" -->
-- **Exemple 3**: binding bidirectionnel
+
+-   **Exemple 3**: binding bidirectionnel
 
 ```html
 <input [(ngModel)]="postalCode" name="postalCode" type="text" />
@@ -78,9 +80,9 @@ export class AppModule {}
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Regrouper des champs dans un sous objet
+# Group fields in a sub-object
 
-<b>ngModelGroup</b> regroupe des contrôles dans un sous objet<br><br>
+<b>ngModelGroup</b> groups controls in a sub-object<br><br>
 
 ```html
 <p ngModelGroup="address"><input ngModel name="city" /></p>

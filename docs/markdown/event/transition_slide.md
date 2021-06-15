@@ -1,2 +1,3 @@
 <!-- .slide: class="transition" -->
-# Gestion des évènements DOM
+
+# Management of DOM events

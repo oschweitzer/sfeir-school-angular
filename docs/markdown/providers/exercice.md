@@ -1,18 +1,24 @@
 <!-- .slide: class="exercice" -->
-# Exercice 12 : service
-## Exercice
+
+# Exercise 12 : service
+
+## Exercise
 
 <br>
 
-- Créer un service PeopleService dans le répertoire shared/people-service
-- Créer toutes les autres opérations de CRUD
-- Enregistrer votre service de manière globale ou locale
-Notes:
-- Remplacer dans le composant le http.get par peopleService.fetch qui contiendra votre Http.get
-- Replacer tous les http. par votre nouveau service peopleService
+-   Create a PeopleService service in the shared/people-service directory
+-   Create all other CRUD operations
+-   Register your service globally or locally
+    Notes:
+-   Replace in the component the http.get by peopleService.fetch which will contain your Http.get
+-   Replace all http. through your new peopleService service
 
 ##==##
+
 <!-- .slide: class="exercice full-center" -->
-# Exercice 12 : service
+
+# Exercise 12 : service
+
 ## Solution
+
 <b>steps/12-service-solution</b>

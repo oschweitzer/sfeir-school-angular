@@ -1,33 +1,38 @@
 <!-- .slide" -->
-# Les deux types de composants
 
-- La <b>Directive</b> permet d'enrichir un élément HTML<br><br>
-- Le <b>Component</b> est une directive avec une vue et des styles CSS
+# The two types of components
 
+-   The <b> Directive </b> allows to enrich an HTML element <br> <br>
+-   The <b> Component </b> is a directive with a view and CSS styles
 ##==##
 <!-- .slide: class="two-column-layout" -->
-# Angular: un arbre de composant
+
+# Angular: a component tree
 
 ##--##
 <br><br>
-- Les enfants sont ajoutés au parent s'ils apparaissent dans son template<br><br>
-- Un composant doit être obligatoirement déclaré dans un module
 
-##--##
-<br><br>
+-   Children are added to the parent if they appear in its template <br> <br>
+-   A component must be declared in a module
+
+    ##--##
+    <br><br>
 
 ![h-400](assets/images/school/components/component_tree.png)
 
 ##==##
-<!-- .slide: class="with-code inconsolata" -->
-# L'annotation @Component
-Carte d'identité d'un composant<br>
 
-- selector
-- template et templateUrl
-- providers
-- viewEncapsulation
-- ChangeDetection <br><br>
+<!-- .slide: class="with-code inconsolata" -->
+
+# The @Component annotation
+
+Identity card of a component <br>
+
+-   selector
+-   template and templateUrl
+-   providers
+-   viewEncapsulation
+-   ChangeDetection <br> <br>
 
 ```typescript
 @Component({
@@ -36,24 +41,28 @@ Carte d'identité d'un composant<br>
   ...
 })
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Imbrication des composants
-Lorsqu'un composant parent souhaite utiliser des composants enfants<br>
 
-- les composants enfants doivent être tous référencés
-- les composants enfants doivent être déclarés dans les "déclarations" du <b>@NgModule()</b><br><br>
+# Nesting of components
+
+When a parent component wants to use child components <br>
+
+-   child components must all be referenced
+-   child components must be declared in the "declarations" of <b> @NgModule () </b> <br> <br>
 
 ```typescript
 import { HomeComponent } from './app/home';
 import { FooDirective } from './app/shared/foo.directive';
 
 @NgModule({
-  declarations: [HomeComponent, FooDirective]  
+    declarations: [HomeComponent, FooDirective],
 })
-export class AppModule { }
+export class AppModule {}
 ```
+
 <!-- .element: class="big-code" -->

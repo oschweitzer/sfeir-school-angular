@@ -1,34 +1,34 @@
 <!-- .slide-->
 
-# Configuration simple
+# Simple configuration
 
--   <b>path: </b>l’URL de route (ex: /people/:id)<br><br>
--   <b>component: </b>le composant associé à cette route (ex: PeopleComponent)<br><br>
--   <b>redirectTo: </b>le fragment d’URL vers lequel rediriger la route courante (ex: '/home')<br><br>
--   <b>pathMatch: </b>stratégie de redirection (full / prefix)
-    -   full: tente une reconnaissance depuis la racine de la route
-    -   prefix: tente une reconnaissance partielle de la route
+-   <b> path: </b> the URL of the route (ex: / people /: id) <br> <br>
+-   <b> component: </b> the component associated with this route (ex: PeopleComponent) <br> <br>
+-   <b> redirectTo: </b> the URL fragment to redirect the current route to (ex: '/ home') <br> <br>
+-   <b> pathMatch: </b> redirect strategy (full / prefix)
+    -   full: attempt a recognition from the root of the route
+    -   prefix: attempts a partial recognition of the route
 
 ##==##
 
 <!-- .slide -->
 
-# Configuration avancé (complète)
+# Advanced configuration (complete)
 
-Il existe d'autres options de configuration, permettant de réaliser du routing plus avancé.
-<br><br>
+There are other configuration options, allowing for more advanced routing.
+<br> <br>
 
--   <b>outlet: </b>le nom de l'emplacement dans lequel le composant doit s'afficher<br><br>
--   <b>data: </b>données passées à la route via ActivatedRoute<br><br>
--   <b>canActivate / canDeactivate: </b>permet d’activer ou non la route<br><br>
--   <b>resolver: </b>récupère des données avant de naviguer vers la route<br><br>
--   <b>children: </b>un tableau de définition des sous-routes
+-   <b> outlet: </b> the name of the location where the component should appear <br> <br>
+-   <b> data: </b> data passed to the route via ActivatedRoute <br> <br>
+-   <b> canActivate / canDeactivate: </b> allows to activate or not the route <br> <br>
+-   <b> resolver: </b> fetch data before navigating to the route <br> <br>
+-   <b> children: </b> an array of sub-routes definition
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Un exemple de configuration de routes
+# An example of a route configuration
 
 ```typescript
 const ROUTES: Routes = [
@@ -36,7 +36,7 @@ const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'people', component: PeopleComponent },
     { path: 'people/:id', component: PersonComponent },
-    { path: '**', component: NotFoundComponent }
+    { path: '**', component: NotFoundComponent },
 ];
 ```
 
@@ -44,18 +44,18 @@ const ROUTES: Routes = [
 
 Notes:
 
--   Attention l'ordre de déclaration des routes est important
+-   Attention the order of declaration of the routes is important
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# La stratégie de navigation
+# The navigation strategy
 
-2 types de stratégie<br><br>
+2 types of strategy <br> <br>
 
--   Par 'Path', aussi nommée PathLocationStrategy (Mode HTML5 et psuhState=>Par défaut) [ex: localhost:4200/people/1]: { useHash: false }<br><br>
--   Par 'Hash', aussi nommée HashLocationStrategy [ex: localhost/#/people/1]: { useHash: true } <br><br>
+-   By 'Path', also named PathLocationStrategy (HTML5 mode and psuhState => Default) [ex: localhost: 4200 / people / 1]: {useHash: false} <br> <br>
+-   By 'Hash', also named HashLocationStrategy [ex: localhost / # / people / 1]: {useHash: true} <br> <br>
 
 ```typescript
 RouterModule.forRoot(routes, { useHash: true });
@@ -67,7 +67,7 @@ RouterModule.forRoot(routes, { useHash: true });
 
 <!-- .slide: class="two-column-layout" -->
 
-# Utiliser la navigation en Angular
+# Use navigation in Angular
 
 ##--##
 ![h-600](assets/images/school/navigation/navigation_routing_module.png)

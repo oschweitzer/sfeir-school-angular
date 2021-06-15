@@ -1,38 +1,43 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
-# Résumé
+
+# summary
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
+
 # Template Driven vs Reactive Forms
 
 ##--##
 <br><br>
-- La classe expose le modèle de données
-- Binding et validation se font dans la vue
-- La vue contient le data binding
+
+-   The class exposes the data model
+-   Binding and validation are done in the view
+-   The view contains the data binding
 
 ![h-350](assets/images/school/forms/template_driven.png)
 
 ##--##
 <br><br>
 
-- La classe expose le modèle du formulaire
-- Binding et validation se font dans la classe
-- La vue contient le mapping
+-   The class exposes the model of the form
+-   Binding and validation are done in the class
+-   The view contains the mapping
 
 ![h-350](assets/images/school/forms/reactive_forms.png)
 
 ##==##
 
 <!-- .slide: class="two-column-layout"-->
-# Avantages du Model-Driven
+
+# Advantages of Model-Driven
+
 ##--##
 <br><br><br>
 
-- La logique est dans le code et non dans le template
-- Plus facile à tester
-- Prêt pour de futur scénarios (Data-Driven-Form)
+-   The logic is in the code and not in the template
+-   Easier to test
+-   Ready for future scenarios (Data-Driven-Form)
 
 ##--##
 <br><br><br>

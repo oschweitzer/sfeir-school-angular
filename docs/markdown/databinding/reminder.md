@@ -1,24 +1,23 @@
 <!-- .slide-->
 
-# Attribut vs Propriétés
+# Attribute vs Properties
 
--   Les attributs c'est du <b>HTML</b>, les propriétés c'est du <b>DOM</b><br>
-    -   mapping strict (id)
-    -   attribut sans propriétés (colspan)
-    -   propriété sans attribut (text-content)
-    -   les 2 mais ... <br><br>
--   L'attribut permet d'initialiser les propriété la plupart du temps <br><br>
--   Il existe des attributs sans valeurs (ex: disabled sur un boutton)<br><br>
--   un attribut: une chaîne de caratères
-
-##==##
+-   Attributes are <b> HTML </b>, properties are <b> DOM </b> <br>
+    -   strict mapping (id)
+    -   attribute without properties (colspan)
+    -   property without attribute (text-content)
+    -   the 2 but ... <br> <br>
+-   The attribute is used to initialize properties most of the time <br> <br>
+-   There are attributes without values ​​(eg: disabled on a button) <br> <br>
+-   an attribute: a string of characters
+    ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Angular et les propriétés
+# Angular and properties
 
--   Un monde sans attribut<br><br>
--   Avec le binding, nous travaillons uniquement sur les propriétés<br><br>
+-   A world without attributes <br> <br>
+-   With the binding, we only work on the properties <br> <br>
 
 ```html
 <button type="submit" [disabled]="form.invalid">Submit</button>
@@ -28,17 +27,18 @@
 
 <br><br>
 
--   Permet de passer des objets
+-   Allows you to pass objects
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# Et si je veux agir sur un attribut ?
-Certains éléments n'ont pas obligatoirement la propriété (svg, colspan)
+# What if I want to act on an attribute?
+
+Some elements do not have to have the property (svg, colspan)
 <br>
 
--   On peut cibler un attribut en précédent son nom par <b>attr</b>
+-   You can target an attribute by preceding its name with <b> attr </b>
 
 ```html
 <td [attr.colspan]="1+1">a cell!!</td>
@@ -46,7 +46,7 @@ Certains éléments n'ont pas obligatoirement la propriété (svg, colspan)
 
 <!-- .element: class="big-code" -->
 
--   Pour les classes, on précède le nom de la classe par: <b>class</b>
+-   For classes, we precede the name of the class by: <b> class </b>
 
 ```html
 <div [class.isSpecial]="isSpecial">special class</div>
@@ -54,7 +54,7 @@ Certains éléments n'ont pas obligatoirement la propriété (svg, colspan)
 
 <!-- .element: class="big-code" -->
 
--   Pour le style, on précède le nom de la propriété par style
+-   For the style, we precede the name of the property by style
 
 ```html
 <div [style.color]="isSpecial ? 'red' : 'green'">Special class</div>

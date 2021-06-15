@@ -1,2 +1,3 @@
 <!-- .slide: class="transition underline" -->
-# Communication entre composants
+
+# Communication between components

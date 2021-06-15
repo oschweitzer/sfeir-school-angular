@@ -1,57 +1,58 @@
 <!-- .slide: class="with-code inconsolata" -->
-# La validation avec Template driven form
 
-- La validation se fait à l'aide des attributs html classique de validations:<br><br>
-    - required
-    - minLength
-    - maxLength
-    - pattern
-    - ...
-<br><br>
+# Validation with Template driven form
 
-Ok mais si un champ est requis en fonction d'un autre?
+-   The validation is done using the classic html attributes of validations: <br> <br> - required - minLength - maxLength - pattern - ...
+    <br><br>
+
+Ok but if a field is required according to another?
+
 <!-- .element: class="important" -->
 <br>
-Et bien on utilise la propriété liée à l'attribut
+Well we use the property linked to the attribute
 <br>
 
 ```html
-<input type="text" name="lastname" [(ngModel)]="person.lastname"
-  [required]="person.firstname" />
+<input type="text" name="lastname" [(ngModel)]="person.lastname" [required]="person.firstname" />
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide -->
-# Les différents états d'un contrôle<br>
 
-- <b>control.pristine</b> : l’utilisateur n’a pas interagi avec le contrôle
-- <b>control.dirty</b> : l’utilisateur a déjà interagi avec le contrôle
-- <b>control.valid</b> : le contrôle est valide
-- <b>control.invalid</b> : le contrôle n’est pas valide
-- <b>control.touched</b> : le contrôle a perdu le focus
-- <b>control.untouched</b> : le contrôle n’a pas encore perdu le focus
+# The different states of a control <br>
+
+-   <b> control.pristine </b>: the user has not interacted with the control
+-   <b> control.dirty </b>: the user has already interacted with the control
+-   <b> control.valid </b>: the control is valid
+-   <b> control.invalid </b>: the control is not valid
+-   <b> control.touched </b>: the control has lost focus
+-   <b> control.untouched </b>: the control has not yet lost focus
 
 ##==##
 
 <!-- .slide-->
-# Les différentes classes disponibles pour le style<br>
 
-- .ng-valid / .ng-invalid <br><br>
-- .ng-pristine / .ng-dirty<br><br>
-- .ng-pristine / .ng-dirty<br><br>
-- .ng-touched / .ng-untouched
+# The different classes available for the <br> style
+
+-   .ng-valid / .ng-invalid <br><br>
+-   .ng-pristine / .ng-dirty<br><br>
+-   .ng-pristine / .ng-dirty<br><br>
+-   .ng-touched / .ng-untouched
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Gérer les erreurs<br>
+
+# Manage errors <br>
 
 ```html
-<input type="text" name="user" ngModel #userRef="ngModel" required>    
+<input type="text" name="user" ngModel #userRef="ngModel" required />
 <div [hidden]="!userRef.errors?.required">
-  <span class="help-block">Ce champ est obligatoire</span>
+    <span class="help-block">This field is required</span>
 </div>
 ```
+
 <!-- .element: class="big-code" -->

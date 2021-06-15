@@ -1,2 +1,3 @@
 <!-- .slide: class="transition" -->
-# Communication serveur
+
+# Server communication

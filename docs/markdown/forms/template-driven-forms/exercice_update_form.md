@@ -1,31 +1,39 @@
 <!-- .slide: class="exercice" -->
-# Exercice 18 : form-b
-## Exercice<br>
 
-- A l'aide du CLI, créer un composant UpdateComponant
-- Rendre accessible ce composant via l'url: /edit/:id (modifier la définition des routes)
-- Récupérer le paramètre id de l'url (ActivatedRoute)
-- A l'aide de cet id récupérer le détail de la personne
-Notes:
-- api à appeler: GET /api/peoples/:id
+# Exercise 18: form-b
+
+## Exercise<br>
+
+-   Using the CLI, create an UpdateComponant component
+-   Make this component accessible via the url: / edit /: id (modify the definition of the routes)
+-   Retrieve the id parameter from the url (ActivatedRoute)
+-   Using this id retrieve the person's details
+    Notes:
+-   api to call: GET/api/peoples/:id
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Exercice 18 : form-b
-## Exercice<br>
 
-- Utiliser FormComponent dans UpdateComponent
-- Ajouter une propriété person au FormComponent
-- Modifier le binding pour le rendre bidirectionnel
-- Changer le titre du form, "Modification" si la personne n'est pas nulle
-- Modifier la personne lors de l'event personAdd 
-Notes:
-- api à appeler: PUT /api/peoples/:id
-- Dans un vrai projet il est tout de même déconseiller d'utiliser le même formulaire pour la création et la modification
+<!-- .slide: class="exercice" -->
+
+# Exercise 18 : form-b
+
+## Exercise<br>
+
+-   Use FormComponent in UpdateComponent
+-   Add a person property to the FormComponent
+-   Modify the binding to make it bidirectional
+-   Change the title of the form, "Modification" if the person is not null
+-   Modify the person during the personAdd event
+    Notes:
+-   api to call: PUT/api/peoples/:id
+-   In a real project, it is still not recommended to use the same form for creation and modification
 
 ##==##
 
 <!-- .slide: class="exercice full-center" -->
-# Exercice 18 : form-b
+
+# Exercise 18 : form-b
+
 ## Solution
+
 <b>steps/18-form-b-solution</b>

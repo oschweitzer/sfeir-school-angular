@@ -1,13 +1,13 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 15 : directive-use
+# Exercise 15: directive-use
 
 ## Exercice<br>
 
-- Nous venons d'ajouter une liste dans la vue du composant PeopleComponent et un bouton pour le choix du mode d'
-  affichage
-- Utiliser la directive NgSwitch pour changer le mode d'affichage de la liste "card", "list"
-- Modifier les icônes du boutons à l'aide de NgIf
+-   We have just added a list in the PeopleComponent component view and a button for choosing the mode of
+    display
+-   Use the NgSwitch directive to change the display mode of the list "card", "list"
+-   Edit button icons using NgIf
 
 ##==##
 

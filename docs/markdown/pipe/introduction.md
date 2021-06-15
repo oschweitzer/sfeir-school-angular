@@ -1,25 +1,35 @@
 <!-- .slide -->
-# Exemple
+
+# Example
+
 ![full-center h-800](assets/images/school/pipe/exemple_filter_uppercase.png)
 
 ##==##
+
 <!-- .slide-->
-# Exemple
+
+# Example
+
 ![full-center h-800](assets/images/school/pipe/exemple_filter_date.png)
 
 ##==##
 
 <!-- .slide -->
-# Angular et ses pipes déjà existants<br>
 
-- currency
-- date
-- lowercase
-- async
-- json
-- decimal
-- percent
+# Angular and its already existing pipes <br>
+
+-   currency
+-   date
+-   lowercase
+-   async
+-   json
+-   decimal
+-   percent
+
+<!-- .element: class="big-code" -->
+
 Notes:
-- async est très pratique pour résoudre des observables dans le template
-- json permet d'afficher de manière "pretty" des variables (object, array) dans le template (utile pour débugger)
-- date très utile pour afficher une date dans un certain format (peut fonctionner avec moment)
+
+-   async is very useful for resolving observables in the template
+-   json allows to display "pretty" variables (object, array) in the template (useful for debugging)
+-   very useful date to display a date in a certain format (can work with time)

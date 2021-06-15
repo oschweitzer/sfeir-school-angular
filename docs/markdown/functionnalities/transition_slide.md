@@ -1,2 +1,3 @@
 <!-- .slide: class="transition" -->
-# Ajoutons des fonctionnalités
+
+# Let's add features

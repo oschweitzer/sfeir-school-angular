@@ -2,15 +2,15 @@
 
 # Webpack
 
-Sous le capot, Angular utilise webpack pour builder notre application
+Under the hood, Angular uses webpack to build our application
 
 ##--##
 <br><br>
 
--   Qu'est ce que Webpack ?
-    -   Bundle en Javascript
+-   What is Webpack?
+    -   Bundle in Javascript
     -   Hot Reload / webpack-dev-server
-    -   Actuellement le choix par défaut d'Angular
+    -   Currently Angular's default choice
 
 ![h-300](assets/images/school/architecture/webpack_logo.png)
 
@@ -19,5 +19,5 @@ Sous le capot, Angular utilise webpack pour builder notre application
 ![h-800](assets/images/school/architecture/build_exemple.png)
 Notes:
 
--   Angular version 9 apporte son lot de nouveautés avec Ivy nouveau renderer et Bazel pour un build plus léger
--   Attention Bazel ne remplacera pas webpack, mais webpack utilisera bazel
+-   Angular version 9 brings a lot of new features with Ivy new renderer and Bazel for a lighter build
+-   Attention Bazel will not replace webpack, but webpack will use bazel

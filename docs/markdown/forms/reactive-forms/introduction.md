@@ -1,11 +1,14 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
+
 # Reactive forms
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# La Fondation du Reactive forms
-Pour réaliser des formulaires avec Reactive Forms, il est nécessaire d'importer le module <b>ReactiveFormsModule</b> provenant également du package <b>@angular/forms</b>
+
+# The Reactive Forms Foundation
+
+To create forms with Reactive Forms, it is necessary to import the <b> ReactiveFormsModule </b> module also coming from the <b> @angular/forms </b> package
 <br><br>
 
 ```typescript
@@ -13,37 +16,42 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [BrowserModule, ReactiveFormsModule],
-  declarations: [ ],
-  providers: [],
-  bootstrap: []
+    imports: [BrowserModule, ReactiveFormsModule],
+    declarations: [],
+    providers: [],
+    bootstrap: [],
 })
-export class AppModule { }
+export class AppModule {}
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# Syntaxe Global dans les formulaires Reactive forms
+
+# Global syntax in Reactive forms
+
 ##--##
+
 <!-- .slide: class="with-code inconsolata" -->
+
 <br><br>
+
 ```html
 <form [formGroup]="editForm">
-   <input type="text" formControlName="firstname">
-   <div [hidden]="!editForm.controls.firstname.valid">
-      Firstname est d'un format invalid
-   </div> 
-   <button type="submit" [disabled]="!editForm.valid">
-     Modifier
-   </button>
+    <input type="text" formControlName="firstname" />
+    <div [hidden]="!editForm.controls.firstname.valid">Firstname est d'un format invalid</div>
+    <button type="submit" [disabled]="!editForm.valid">Modifier</button>
 </form>
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
+
 <!-- .slide: class="with-code inconsolata" -->
+
 <br><br>
 
 ```typescript
@@ -53,40 +61,47 @@ export class FormComponent {
   editForm: FormGroup;
    constructor() {
     this.editForm = new FormGroup({
-        firstname: new FormControl('', 
+        firstname: new FormControl('',
           [Validators.required, Validators.minLength(2)]
         )
     });
    }
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
-<!-- .slide: class="with-code inconsolata" -->
-# La Syntaxe dans le template
 
-- Référence au modèle du formulaire via <b>formGroup</b>
-- Mapping de controls via <b>formControlName</b><br><br>
+<!-- .slide: class="with-code inconsolata" -->
+
+# Syntax in the template
+
+-   Reference to the form template via <b> formGroup </b>
+-   Mapping of controls via <b> formControlName </b> <br> <br>
 
 ```html
 <form [formGroup]="editForm">
-   <input type="text" formControlName="firstname">
-   <div [hidden]="!editForm.controls.firstname.valid">Firstname est d'un format invalid</div> 
-   <button type="submit" [disabled]="!editForm.valid">Modifier</button>
+    <input type="text" formControlName="firstname" />
+    <div [hidden]="!editForm.controls.firstname.valid">Firstname est d'un format invalid</div>
+    <button type="submit" [disabled]="!editForm.valid">Modifier</button>
 </form>
 ```
+
 <!-- .element: class="big-code" -->
+
 Notes:
-- formGroup déclare comme pour le template driven form une référence sur le modèle editForm
-- formControlName: effectue le binding d'un contrôle présent dans le modèle
+
+-   formGroup declares as for the template driven form a reference on the editForm model
+-   formControlName: performs the binding of a control found in the model
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Regrouper les champs dans le template
 
-- Regrouper les champs dans un sous objet grâce à <b>FormGroupName</b> <br><br>
+# Group the fields in the template
+
+-   Group the fields in a sub-object using <b> FormGroupName </b> <br> <br>
 
 ```html
 <form [formGroup]="editForm" (ngSumit)="submitEditForm(editForm.value)">
@@ -96,15 +111,19 @@ Notes:
     </div>
 </form>
 ```
+
 <!-- .element: class="big-code" -->
+
 Notes:
-- ngSubmit permet de soumettre le formulaire lors de la touche entrer
-- editForm.valu renvoie un object de ce format: { address: { zipCode: 57000, country: FRANCE } }
+
+-   ngSubmit allows to submit the form when pressing enter
+-   editForm.value returns an object of this format: {address: {zipCode: 57000, country: FRANCE}}
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# La syntaxe dans la classe
+
+# The syntax in the class
 
 ```typescript
 import { Validators, FormControl, FormGroup } from '@angular/forms';
@@ -118,7 +137,10 @@ export class FormComponent {
    }
 }
 ```
+
 <!-- .element: class="big-code" -->
+
 Notes:
-- firstname est de type AbstracteControl, si l'on souhaite update sa valeur lors d'un certain évènement comme le click d'un bouton, il existe la méthode patchValue
-- coup de pouce: Réaliser des getters qui renvoie l'AbstractControl. Ca allégerera votre template => this.editForm.get('firstname')
+
+-   firstname is of type AbstractControl, if you want to update its value during a certain event such as the click of a button, there is the patchValue method
+-   boost: Make getters that return the AbstractControl. It will lighten your template => this.editForm.get ('firstname')

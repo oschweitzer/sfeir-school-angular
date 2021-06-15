@@ -1,11 +1,14 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
-# Le composant
+
+# The component
 
 ##==##
 
 <!-- .slide -->
-# Le composant
-Le composant est composé de trois concepts de base.
+
+# The component
+
+The component is composed of three basic concepts.
 <br><br>
 
 ![center h-600](assets/images/school/architecture/components.png)
@@ -13,27 +16,33 @@ Le composant est composé de trois concepts de base.
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Le component: sa logique
-La logique du composant utilise la syntax de classe de ES2015
+
+# The component: logic
+
+The logic of the component uses the syntax of the class ES2015
 <br><br>
 
 ```typescript
 export class AppComponent {
-  name: string;
-  constructor(){
-    this.name = 'Angular';
-   }
+    name: string;
+    constructor() {
+        this.name = 'Angular';
+    }
 }
 ```
+
 <!-- .element: class="big-code" -->
 <br>
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Le composant: son affichage
-L'affichage du composant dans la page se fait à l'aide d'annotations
+
+# The component: display
+
+The display of the component in the page is due to the markup rule
 <br><br>
+
 ```typescript
 @Component({
   selector: 'sfeir-app',
@@ -41,35 +50,40 @@ L'affichage du composant dans la page se fait à l'aide d'annotations
   styleUrls: ['app.component.scss']
 })
 ```
+
 <!-- .element: class="big-code" -->
 <br>
 
 ```html
 <sfeir-app></sfeir-app>
 ```
+
 <!-- .element: class="big-code" -->
 <br>
 Notes:
-- Une annotation de type @Component se fait toujours au dessus d'une classe. Sans cette classe, le build et le linter affiche une erreur
+- An annotation of type @Component can be applied to any class. Without this class, the build and layout affect an error
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
-# Le composant: sa globalité
-L'écriture d'un composant dans sa totalité est donc la suivante
+
+# The component: totality
+
+The writing of a component in its totality is beyond that
 <br><br>
 
 ```typescript
 @Component({
-  selector: 'sfeir-app',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+    selector: 'sfeir-app',
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  name: string;
-  constructor(){
-    this.name = 'Angular';
-   }
+    name: string;
+    constructor() {
+        this.name = 'Angular';
+    }
 }
 ```
+
 <!-- .element: class="big-code" -->

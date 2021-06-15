@@ -1,17 +1,22 @@
 <!-- .slide: class="exercice" -->
-# Exercice 21 : form-custom-validator
-## Exercice<br>
 
-- Générer une class à l'aide du CLI dans le shared/forms
-- Créer un validateur permettant de vérifier si l'adresse mail respect le format nom.p@sfeir.com
-- Associer ce validateur au contrôle Email
-- Afficher dans le HTML le message correspondant au type d’erreur
-Notes:
-- regex pattern: /^\w+\.\w@sfeir\.com$/
+# Exercise 21: form-custom-validator
+
+## Exercise<br>
+
+-   Generate a class using the CLI in the shared / forms
+-   Create a validator to check if the email address respects the format name.p@sfeir.com
+-   Associate this validator with the Email control
+-   Display in HTML the message corresponding to the type of error
+    Notes:
+-   regex pattern: /^\w+\.\w@sfeir\.com$/
 
 ##==##
 
 <!-- .slide: class="full-center exercice" -->
-# Exercice 21 : form-custom-validator
+
+# Exercise 21 : form-custom-validator
+
 ## Solution
+
 <b>steps/21-form-custom-validator-solution</b>

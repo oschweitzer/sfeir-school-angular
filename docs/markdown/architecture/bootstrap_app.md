@@ -1,11 +1,14 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
+
 # Bootstraping
 
 ##==##
 
 <!-- .slide: class="with-code inconsolata" -->
+
 # Bootstraping: main.ts
-Dans une application Angular, le fichier __main.ts__ est chargé en premier
+
+In an Angular application, the **main.ts** file is loaded first
 <br><br>
 
 ```typescript
@@ -14,12 +17,14 @@ import { AppModule } from './app.module';
 
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# Bootstraping dans sa totalité
+
+# Bootstraping in its entirety
 
 ##--##
 <br><br><br>
@@ -29,6 +34,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
@@ -36,13 +42,14 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 ```typescript
 @NgModule({
-  imports: [BrowserModule],
-  declaration: [AppComponent],
-  exports: [],
-  bootstrap: [AppComponent],
+    imports: [BrowserModule],
+    declaration: [AppComponent],
+    exports: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 ```
+
 <!-- .element: class="big-code" -->
 
 <br><br>
@@ -50,4 +57,5 @@ export class AppModule { }
 ```html
 <sfeir-app></sfeir-app>
 ```
+
 <!-- .element: class="big-code" -->

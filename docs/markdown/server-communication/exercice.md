@@ -1,16 +1,22 @@
 <!-- .slide: class="exercice" -->
-# Exercice 06 : http
-## Exercice<br>
 
-- Importer le module HttpClientModule et ajouter dans votre NgModule<br><br>
-- Injecter le service HttpClient dans HomeComponent<br><br>
-- Réaliser les call nécessaires pour récupérer une liste de personnes et une personne au hasard
-<br><br>
-- http://localhost:9000/api/peoples retrourne une liste de personnes
-- http://localhost:9000/api/peoples/random retourne une personne au hasard
+# Exercise 06 : http
+
+## Exercise<br>
+
+-   Import the HttpClientModule and add to your NgModule <br> <br>
+-   Inject the HttpClient service into HomeComponent <br> <br>
+-   Make the necessary calls to retrieve a list of people and a random person
+    <br> <br>
+-   http://localhost:9000/api/peoples returns a list of people
+-   http://localhost:9000/api/peoples/random returns a random person
 
 ##==##
+
 <!-- .slide: class="exercice full-center" -->
-# Exercice 06 : http
+
+# Exercise 06 : http
+
 ## Solution
+
 <b>steps/06-http-solution</b>

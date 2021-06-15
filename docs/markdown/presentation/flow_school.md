@@ -1,8 +1,8 @@
-# Déroulement de la formation
+# Program of the training
 
 <p class="full-center">
-A quand la pause ? <br>
-Tour de table ...
+When is the break? <br>
+Round table ...
 </p>
 <br><br>
 
@@ -10,10 +10,10 @@ Tour de table ...
 
 # Repositories
 
-- <b>Slides de la formation</b>
-    - https://sfeir-open-source.github.io/sfeir-school-angular<br><br>
-- <b>Sources des exercices</b>
-    - https://github.com/sfeir-open-source/sfeir-school-angular/TP
+-   <b>Training slides</b>
+    -   https://sfeir-open-source.github.io/sfeir-school-angular<br><br>
+-   <b>Repository of exercises</b>
+    -   https://github.com/sfeir-open-source/sfeir-school-angular/TP
 
 ##==##
 
@@ -21,7 +21,7 @@ Tour de table ...
 
 ##==##
 
-# Bootstrapping de l'application
+# Bootstrapping of the application
 
 ```bash
 git clone https://github.com/sfeir-open-source/sfeir-school-angular.git
@@ -42,17 +42,17 @@ npm run server
 
 <br><br>
 
-- <b>npm run client:</b>http://localhost:4200 <br>
-- <b>npm run server:</b>http://localhost:9000
+-   <b>npm run client:</b>http://localhost:4200 <br>
+-   <b>npm run server:</b>http://localhost:9000
 
 ##==##
 
-# Déroulement des exercices
+# Sequence of exercises
 
-- __Chaque concept clé d'Angular est accompagné d'un TP.__
+-   **Each key concept of Angular is accompanied by a practical work.**
 
 <br><br><br>
 
-- Déroulement du TP :
-    - __une page d'excercice : steps/`XX-name_tp`__
-    - __une page de solution : steps/`XX-name_tp-solution`__
+-   Course of the TP :
+    -   **an exercise page : steps/`XX-name_tp`**
+    -   **a solution page : steps/`XX-name_tp-solution`**

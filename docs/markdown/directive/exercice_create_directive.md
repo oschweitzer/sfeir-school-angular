@@ -1,18 +1,23 @@
 <!-- .slide: class="exercice" -->
-# Exercice 16 : directive-create
-## Exercice<br>
 
-- Créer à l'aide du CLI dans le répertoire shared une directive SfeirBadge
-- Cette directive doit afficher une icon si la personne est un manager
-- Cette directive doit s'utiliser dans la vue list du template du composant PeopleComponent
-Notes:
-- dans le répertoire steps/directive-create la commande pour créer la directive est la suivante ng g d shared/badge/badge
-- icon à afficher est la suivante: <i class="material-icons">supervisor_account</i>
-- la directive doit s'utiliser de la façon suivante: <span sfeirBadge [person]="person"></span>
+# Exercise 16: directive-create
+
+## Exercise <br>
+
+-   Create using the CLI in the shared directory a SfeirBadge directive
+-   This directive must display an icon if the person is a manager
+-   This directive must be used in the list view of the PeopleComponent component template
+    Notes:
+-   in the steps / directive-create directory the command to create the directive is as follows ng g d shared / badge / badge
+-   icon to display is as follows: <i class = "material-icons"> supervisor_account </i>
+-   the directive must be used as follows: <span sfeirBadge [person] = "person"> </span>
 
 ##==##
- 
+
 <!-- .slide: class="full-center exercice" -->
-# Exercice 16 : directive-create
+
+# Exercise 16 : directive-create
+
 ## Solution
+
 <b>steps/16-directive-create-solution</b>

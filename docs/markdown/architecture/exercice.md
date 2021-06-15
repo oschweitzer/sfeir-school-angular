@@ -1,19 +1,27 @@
 <!-- .slide: class="exercice" -->
-# Exercice 01 : hands-on
-## Exercice
-Sans utiliser le CLI d'Angular<br><br>
-- Créer le composant AppComponent
-- Configurer le module de l'application: app.module.ts
-- Afficher du texte dans la variable name en utilisant la syntax suivante {{ name }} dans le template
-Notes:
-- le template lié au composant: app.component.html
-- le style lié au composant: app.component.scss
-- selector du composant: sfeir-app
+
+# Exercise 01 : hands-on
+
+## Exercise
+
+Without using the Angular CLI <br> <br>
+
+-   Create the AppComponent component
+-   Configure the application module: app.module.ts
+-   Display text in the name variable using the following syntax {{name}} in the template
+    Notes:
+-   the template linked to the component: app.component.html
+-   the style linked to the component: app.component.scss
+-   component selector: sfeir-app
 
 ##==##
 
 <!-- .slide: class="exercice full-center" -->
-# Exercice 01 : hands-on
+
+# Exercise 01 : hands-on
+
 ## Solution
+
 folder: steps/01-hands-on-solution
+
 <!-- .element: class="bold"-->

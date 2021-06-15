@@ -1,13 +1,18 @@
 <!-- .slide: class="exercice" -->
-# Exercice 07 : router
-## Exercice<br>
 
-- Compléter le fichier app.routes.ts<br><br>
-- Importer la balise <router-outlet><router-outlet> dans le fichier app.component.html
+# Exercise 07 : router
+
+## Exercise<br>
+
+-   Complete the app.routes.ts file <br> <br>
+-   Import the <router-outlet> <router-outlet> tag in the app.component.html file
 
 ##==##
 
 <!-- .slide: class="exercice full-center" -->
-# Exercice 07 : router
+
+# Exercise 07 : router
+
 ## Solution
+
 <b>steps/07-router-solution</b>

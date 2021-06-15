@@ -1,8 +1,8 @@
 <!-- .slide: class="with-code inconsolata" -->
 
-# Les variables de template
+# Template variables
 
--   Variables: une valeur (let)
+-   Variables: a value (let)
 
 ```html
 <movie-details *ngFor="let movie of movies"></movie-details>
@@ -10,9 +10,9 @@
 
 <!-- .element: class="big-code" -->
 
--   Références:
-    -   Élement (# our ref-XXX)
-    -   disponible dans tout le template et le composant (@ViewChild('reference', { static: false })<br>
+-   References:
+    -   Element (# our ref-XXX)
+    -   available in all template and component (@ViewChild ('reference', {static: false}) <br>
 
 ```html
 <input #phone type="text" /> <button type="button" (click)="call(phone.value)">Click</button>

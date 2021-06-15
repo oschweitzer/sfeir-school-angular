@@ -1,27 +1,31 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
-# Le module
+
+# Module
 
 ##==##
 
 <!-- .slide-->
-# Le module: généralités<br>
 
-- Permet de regrouper des fonctionnalités<br><br>
-- Au moins un module par application (obligatoire sans ce module, l'app ne démarre pas)<br><br>
-- Peut être chargé de façon asynchrone (lazy loading)<br><br>
-- Différents types de module (Root Module, Navigation Module, Feature Module, Shared Module, Core Module ...)
-Notes:
-- Root Module, contient en général les autres modules de l'application
-- Feature Module, il en existe un par fonctionnalité (ex: fonctionnalité user => update, creation ...)
-- Shared Module, il en existe également plusieurs, un pour toute l'application et parfois un dans les features modules
-- Core Module, il en existe un qui contient le core de votre application (footer, header, loader)
-- Attention les services ne se mettent pas dans les shareds modules !!!!
+# Module: generalities<br>
+
+-   Allows to group functionalities <br> <br>
+-   At least one module per application (mandatory without this module, the app does not start) <br> <br>
+-   Can be loaded asynchronously (lazy loading) <br> <br>
+-   Different types of module (Root Module, Navigation Module, Feature Module, Shared Module, Core Module ...)
+    Notes:
+-   Root Module, generally contains the other modules of the application
+-   Feature Module, there is one for each feature (ex: user functionality => update, creation ...)
+-   Shared Module, there are also several, one for the whole application and sometimes one in the features modules
+-   Core Module, there is one which contains the core of your application (footer, header, loader)
+-   Attention the services do not put in the shareds modules !!!!
 
 ##==##
 
 <!-- .slide: class="with-code" -->
-# Le module: son écriture
-Comme le composant, l'écriture du module se fait à l'aide d'une classe et d'une annotation
+
+# Module: his writing
+
+Like the component, the module is written using a class and an annotation
 <br><br>
 
 ```typescript
@@ -33,5 +37,5 @@ Comme le composant, l'écriture du module se fait à l'aide d'une classe et d'un
 })
 export class AppModule { }
 ```
-<!-- .element: class="big-code" -->
 
+<!-- .element: class="big-code" -->

@@ -1,42 +1,51 @@
 <!-- .slide: class="exercice" -->
-# Exercice 17 : form
-## Enoncé<br>
 
-- Le composant PeopleComponent vient d'être complété
-    - showDialog(): affiche une modal dialogue
-    - hideDialog(): permet de cacher cette modal<br><br>
-- Le template du composant PeopleComponent a été complété
-    - un boutton pour ajouter une personne, affiche la modal
-    - HTML de la modal
+# Exercise 17: form
+
+## Exercice<br>
+
+-   The PeopleComponent component has just been completed
+    -   showDialog (): displays a modal dialog
+    -   hideDialog (): allows you to hide this modal <br> <br>
+-   The PeopleComponent component template has been completed
+    -   a button to add a person, displays the modal
+    -   HTML of the modal
 
 ##==##
 
 <!-- .slide: class="exercice" -->
-# Exercice 17 : form
-## Exercice<br>
 
-- A l'aide du CLI, créer dans le dossier shared, le composant FormComponent
-- Copier le contenu des fichiers du dossier static
-- Intégrer FormComponent dans AddDialogComponent
-- Rendre le formulaire template driven form
-- Faire communiquer FormComponent avec AddDialogComponent à l'aide des évènements cancel et personAdd
+# Exercise 17: form
+
+## Exercise<br>
+
+-   Using the CLI, create in the shared folder, the FormComponent component
+-   Copy the contents of the files of the static folder
+-   Integrate FormComponent in AddDialogComponent
+-   Make the form template driven form
+-   Make FormComponent communicate with AddDialogComponent using the cancel and personAdd events
 
 ##==##
+
 <!-- .slide: class="sfeir-bg-pink exercice" -->
 
-# Exercice 17 : form
-## Exercice
+# Exercise 17 : form
+
+## Exercise
+
 <br>
 
-- Lors de l'évent cancel, la dialog se ferme
-- Lors de l'évent personAdd, la dialogue se ferme en envoyant la personne au composant PeopleComponent
-- Si lors de la fermeture de la modal PeopleComponent reçoit un personne, implémenter une méthode qui ajoute un contact
-Notes:
-- api à utiliser: POST http://localhost:9000/api/peoples retourne la personne créée
-
-##==##
+-   When the event cancel, the dialog closes
+-   During the personAdd event, the dialog closes by sending the person to the PeopleComponent component
+-   If when closing the PeopleComponent modal receives a person, implement a method that adds a contact
+    Notes:
+-   api to use: POST http://localhost:9000/api/peoples returns the person created
+    ##==##
 
 <!-- .slide: class="full-center exercice" -->
-# Exercice 17 : form
+
+# Exercise 17 : form
+
 ## Solution
+
 <b>steps/17-form-solution</b>

@@ -2,10 +2,10 @@
 
 # HttpClientModule
 
--   Angular apporte son propre client HTTP nécessaire pour les communications serveur
--   Le module se nomme <b>HttpClientModule</b>
--   HttpClientModule provient du package <b>@angular/common/http</b>
-    <br><br>
+-   Angular brings its own HTTP client needed for server communications
+-   The module is called <b> HttpClientModule </b>
+-   HttpClientModule comes from the <b> @angular/common/http </b> package
+    <br> <br>
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -22,10 +22,10 @@ export class AppModule { }
 
 <!-- .slide -->
 
-# Injection dans un Composant
+# Injection into a Component
 
--   Pour utiliser un service dans un composant, il est nécessaire de l'injecter.<br>
--   Injectons le service HttpClient fourni par le module HttpClientModule
+-   To use a service in a component, it is necessary to inject it. <br>
+-   Let's inject the HttpClient service provided by the HttpClientModule
 
 ![h-600](assets/images/school/serveur-communication/injection.png)
 ![h-500](assets/images/school/serveur-communication/injection_astuce.png)

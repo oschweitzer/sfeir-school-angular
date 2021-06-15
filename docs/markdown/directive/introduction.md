@@ -1,54 +1,60 @@
 <!-- .slide: class="with-code inconsolata" -->
-# La directive *ngFor (rappel)
 
-- Itère dans une collection et génère un template par élément <br><br>
-- <b>index, odd, event, last</b> à utiliser en alias dans des variables <br><br>
+# The \*ngFor directive (callback)
+
+-   Iterates through a collection and generates one template per element <br> <br>
+-   <b> index, odd, event, last </b> to use as aliases in variables <br> <br>
 
 ```html
 <ul>
-   <li *ngFor="let fruit of fruits; let i=index">
-       {{ i }} : {{ fruit.name }}
-   </li>
+    <li *ngFor="let fruit of fruits; let i=index">{{ i }} : {{ fruit.name }}</li>
 </ul>
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
-<!-- .slide: class="with-code inconsolata" -->
-# La directive *ngIf
 
-- Change la structure du DOM de manière conditionnel (apparaît ou non dans le DOM)<br><br>
+<!-- .slide: class="with-code inconsolata" -->
+
+# The \*ngIf directive
+
+-   Changes the structure of the DOM conditionally (appears or not in the DOM) <br> <br>
 
 ```html
-<div *ngIf="errorCount > 0" class="error">
-  {{ errorCount }} errors detected
-</div>
+<div *ngIf="errorCount > 0" class="error">{{ errorCount }} errors detected</div>
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
-<!-- .slide: class="with-code inconsolata" -->
-# La directive *ngSwitch
 
-- Change la structure du DOM de manière conditionnel (à la manière d'un switch case)<br><br>
+<!-- .slide: class="with-code inconsolata" -->
+
+# The \*ngSwitch directive
+
+-   Change the structure of the DOM conditionally (like a switch case) <br> <br>
 
 ```html
 <div [ngSwitch]="display">
-  <p *ngSwitchCase="list">...</p>
-  <p *ngSwitchCase="whenExpression1">...</p>
-  <p *ngSwitchDefault>...</p>
+    <p *ngSwitchCase="list">...</p>
+    <p *ngSwitchCase="whenExpression1">...</p>
+    <p *ngSwitchDefault>...</p>
 </div>
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
-<!-- .slide: class="with-code inconsolata" -->
-# Mais c'est quoi ces étoiles
 
-- Elle matérialise les directives structurelles (comme NgIF NgFor et NgSwith)
-- Sucre syntaxique
-- Indique que l'on utilise la balise 'ng-tempate'
-- Attention à ne pas oublier les [] si vous utilisez les templates<br><br>
+<!-- .slide: class="with-code inconsolata" -->
+
+# But what are these stars
+
+-   It materializes the structural directives (like NgIf NgFor and NgSwith)
+-   Syntactic sugar
+-   Indicates that we are using the 'ng-tempate' tag
+-   Be careful not to forget the [] if you use the <br> <br> templates
 
 ```html
 <div *ngIf="errorCount > 0">toto</div>
@@ -57,8 +63,9 @@
     <div>toto</div>
 </ng-template>
 ```
-<!-- .element: class="big-code" -->
-Notes:
-- Live démonstration de la création d'une directive structurelle cas simple: afficher ou cacher un mot de passe au click sur un bouton
 
- 
+<!-- .element: class="big-code" -->
+
+Notes:
+
+-   Live demonstration of the creation of a simple case structural directive: display or hide a password at the click of a button
