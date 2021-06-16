@@ -1,6 +1,6 @@
 <!-- .slide -->
 
-# The methods of the HttpClient service
+# Methods of the HttpClient service
 
 HttpClient provides you with the following methods: <br> <br>
 
@@ -16,7 +16,7 @@ HttpClient provides you with the following methods: <br> <br>
 # Sending data with POST and PUT
 
 -   The data format must be in JSON format <br> <br>
--   the third argument is reserved for headers <br> <br>
+-   The third argument is reserved for headers <br> <br>
 
 ```typescript
 http.post(url, datas, { headers: new HttpHeaders().set('Authorization', 'my-auth-token') });

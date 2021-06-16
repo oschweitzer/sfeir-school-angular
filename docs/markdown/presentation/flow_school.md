@@ -1,4 +1,4 @@
-# Program of the training
+# Training program
 
 <p class="full-center">
 When is the break? <br>
@@ -12,7 +12,7 @@ Round table ...
 
 -   <b>Training slides</b>
     -   https://sfeir-open-source.github.io/sfeir-school-angular<br><br>
--   <b>Repository of exercises</b>
+-   <b>Exercises</b>
     -   https://github.com/sfeir-open-source/sfeir-school-angular/TP
 
 ##==##
@@ -21,7 +21,7 @@ Round table ...
 
 ##==##
 
-# Bootstrapping of the application
+# Bootstrapping the application
 
 ```bash
 git clone https://github.com/sfeir-open-source/sfeir-school-angular.git
@@ -42,12 +42,12 @@ npm run server
 
 <br><br>
 
--   <b>npm run client:</b>http://localhost:4200 <br>
--   <b>npm run server:</b>http://localhost:9000
+-   <b>npm run client: </b>http://localhost:4200 <br>
+-   <b>npm run server: </b>http://localhost:9000
 
 ##==##
 
-# Sequence of exercises
+# Exercise sequence
 
 -   **Each key concept of Angular is accompanied by a practical work.**
 

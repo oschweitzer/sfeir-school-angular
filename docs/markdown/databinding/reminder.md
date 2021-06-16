@@ -46,7 +46,7 @@ Some elements do not have to have the property (svg, colspan)
 
 <!-- .element: class="big-code" -->
 
--   For classes, we precede the name of the class by: <b> class </b>
+-   For classes, the class name is preceded by <b> class </b>
 
 ```html
 <div [class.isSpecial]="isSpecial">special class</div>
@@ -54,7 +54,7 @@ Some elements do not have to have the property (svg, colspan)
 
 <!-- .element: class="big-code" -->
 
--   For the style, we precede the name of the property by style
+-   For the style, the class name is preceded by <b> style </b>
 
 ```html
 <div [style.color]="isSpecial ? 'red' : 'green'">Special class</div>

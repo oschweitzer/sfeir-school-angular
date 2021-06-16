@@ -1,9 +1,9 @@
 <!-- .slide" -->
 
-# The two types of components
+# Two types of components
 
--   The <b> Directive </b> allows to enrich an HTML element <br> <br>
--   The <b> Component </b> is a directive with a view and CSS styles
+-   <b> Directive </b> allows to enrich an HTML element <br> <br>
+-   <b> Component </b> is a directive with a view and CSS styles
 ##==##
 <!-- .slide: class="two-column-layout" -->
 

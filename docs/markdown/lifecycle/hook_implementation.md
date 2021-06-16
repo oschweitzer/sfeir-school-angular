@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code inconsolata" -->
 
-# Implementation of a lifecycle
+# Lifecycle implementation
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

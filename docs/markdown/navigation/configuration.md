@@ -54,8 +54,8 @@ Notes:
 
 2 types of strategy <br> <br>
 
--   By 'Path', also named PathLocationStrategy (HTML5 mode and psuhState => Default) [ex: localhost: 4200 / people / 1]: {useHash: false} <br> <br>
--   By 'Hash', also named HashLocationStrategy [ex: localhost / # / people / 1]: {useHash: true} <br> <br>
+-   By 'Path', also named PathLocationStrategy (HTML5 mode and psuhState => Default) [ex: localhost:4200/people/1]: {useHash: false} <br> <br>
+-   By 'Hash', also named HashLocationStrategy [ex: localhost/#/people/1]: {useHash: true} <br> <br>
 
 ```typescript
 RouterModule.forRoot(routes, { useHash: true });

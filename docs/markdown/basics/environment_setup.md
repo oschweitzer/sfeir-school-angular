@@ -8,7 +8,7 @@
 
 # IntellJ / Webstorm
 
-Solution from JetBrains, comes with plugins needed for web development:<br><br>
+JetBrains' solution, delivered with the necessary plugins for web development:<br><br>
 
 -   Auto-completion<br>
 -   Language / Framework Syntax<br>
@@ -19,8 +19,8 @@ Solution from JetBrains, comes with plugins needed for web development:<br><br>
 ![h-300 float-right](assets/images/school/basics/IntelliJ_IDEA_Logo.png)
 Notes:
 
--   If you want to take WebStorm on large projects, be sure to take the version> 2019
-    The indexing motor is more efficient, the opening is faster. Better Vue support
+-   If you want to use WebStorm on large projects, make sure you get the version > 2019
+    Indexing engine is more efficient, opening is faster. Better support for Vue.
 
 ##==##
 
@@ -28,11 +28,11 @@ Notes:
 
 # Visual Studio Code
 
-Microsoft solution, comes alone, you have to install plugins to have a powerful IDE<br><br>
+Microsoft solution, delivered alone, you must install plugins to have a powerful IDE.<br><br>
 
 -   Angular language service: authorizes the Syntax + auto-completion framework<br><br>
 -   Visual Studio IntelliCode for intelligent autocompletion <br> <br>
--   Editor Config: to have a common editor config with all the members of your team
+-   Editor Config: to have a common editor config with all your team members
 
 ![h-300](assets/images/school/basics/vscode.svg)
 ![h-300 float-right](assets/images/school/basics/editor_config.png)

@@ -2,7 +2,7 @@
 
 # Webpack
 
-Under the hood, Angular uses webpack to build our application
+Under the hood, Angular uses webpack to build <br>our application<br><br>
 
 ##--##
 <br><br>

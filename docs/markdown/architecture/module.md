@@ -23,7 +23,7 @@
 
 <!-- .slide: class="with-code" -->
 
-# Module: his writing
+# Module: writing
 
 Like the component, the module is written using a class and an annotation
 <br><br>

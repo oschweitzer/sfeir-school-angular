@@ -1,14 +1,14 @@
 <!-- .slide: class="transition-bg-grey-1 underline" -->
 
-# The component
+# Component
 
 ##==##
 
 <!-- .slide -->
 
-# The component
+# Component
 
-The component is composed of three basic concepts.
+Component is composed of three basic concepts.
 <br><br>
 
 ![center h-600](assets/images/school/architecture/components.png)
@@ -17,7 +17,7 @@ The component is composed of three basic concepts.
 
 <!-- .slide: class="with-code inconsolata" -->
 
-# The component: logic
+# Component: logic
 
 The logic of the component uses the syntax of the class ES2015
 <br><br>
