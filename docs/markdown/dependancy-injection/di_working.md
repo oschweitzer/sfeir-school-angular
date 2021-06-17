@@ -19,14 +19,14 @@
 
 <!-- .slide-->
 
-# The Injector
+# Injector
 
 -   Responsibility: <br> <br> - <b> Create instances </b> of dependencies. (with the help of <b> Providers </b>) <br> <br> - Keep instances of dependencies in your <b> "cache" </b> <br> <br> - <b> Make available </b> dependencies to the classes that request them.
     ##==##
 
 <!-- .slide-->
 
-# The Injector
+# Injector
 
 -   You don't have to create an injector yourself <br> <br>
 -   There are <b> 2 injector hierarchies </b> in your application: <br> <br>
@@ -38,7 +38,7 @@
 
 <!-- .slide-->
 
-# The DI Token
+# DI Token
 
 -   Responsibility: <br> <br>
     -   Allows <b> to identify </b> a dependency. (KEY) <br> <br>
@@ -46,11 +46,11 @@
 
 ##==##
 
-# The Provider
+# Provider
 
 -   Responsibility: <br> <br>
     -   Allows you to define <b> how </b> to obtain a dependency associated with a DI Token. <br> <br>
-    -   a provider is defined for <b> a </b> injector and it will be used by the latter to create dependencies.
+    -   A provider is defined for <b> an </b> injector and it will be used by the latter to create dependencies.
 
 ##==##
 
@@ -63,7 +63,7 @@
     -   <b> providers: [] </b> property of the <b> @NgModule, @Component, @Directive, @Pipe </b> annotations <br> <br>
 -   Token: <br> <br>
     -   implicit (most of the time) <br> <br>
-    -   or via the <b> @Inject </b> annotation <br> <br>
+    -   or via the <b> @Injectable </b> annotation <br> <br>
         ##==##
 
 <!-- slide: class="two-column-layout"-->

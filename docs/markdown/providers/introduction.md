@@ -1,9 +1,9 @@
 <!-- .slide: class="with-code inconsolata" -->
 
-# Qu'est ce qu'un Service
+# What is a Service
 
 -   An exported class
--   an <b> @Injectable </b> annotation
+-   An <b> @Injectable </b> annotation
 
 ```typescript
 @Injectable({

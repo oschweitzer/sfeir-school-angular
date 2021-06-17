@@ -31,7 +31,7 @@ cd TP && npm i || npm ci
 <br>
 
 ```bash
-npm run client -- "nom de la step"
+npm run client -- "step name"
 ```
 
 <br>
